@@ -1,0 +1,488 @@
+@charset "UTF-8";
+html {
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+    color:#4d484a;
+}
+body {
+	background: #f7f4e5;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4;
+	-webkit-text-size-adjust: 100%;
+    width: 100%;
+    height:100vh;
+    position: relative;
+    margin: 0px;
+}
+
+
+
+article{
+    display: block;
+    max-width: 1440px;
+    height:100vh;
+    justify-content: center;
+    margin: 0 auto;
+    /* position: relative; */
+    height: auto !important;
+}
+
+
+li {
+	list-style: none;
+}
+a {
+	outline: none;
+	color: inherit;
+	text-decoration: none;
+}
+img {
+	border: 0px;
+	vertical-align: bottom;
+}
+body {
+	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	color: inherit;
+	vertical-align: middle;
+	text-align: inherit;
+	font: inherit;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+/* --------------------------------------------------- */
+
+
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px 40px;
+    background: #c2a2b6;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+
+  header .header_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+.header_logo{
+    width: 350px;
+    height: auto;
+    padding: 25px;
+}
+
+.header_logo img{
+    width: 320px;
+}
+
+.header_nav{
+    /* padding: 30px; */
+    display: flex;
+    justify-content: end;
+}
+
+.nav{
+    display: flex;
+    right: 0;
+}
+
+.header_nav li{
+    padding-left: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+
+li a:hover{
+    color: rgba(65, 65, 65,0.6);
+}
+
+/* ----- */
+
+
+
+
+
+
+section{
+    margin: 0 auto;
+    width: 1000px;
+    margin-bottom: 50px;
+}
+
+h2{
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 5px;
+    color:#c2a2b6;
+    font-weight: normal;
+    font-size: 30px;
+    padding: 15px;
+    border-bottom: #c2a2b6 1px solid;
+    margin: 50px auto;
+}
+
+
+h3{
+    display: inline-block;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 3px;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-bottom: #4d484a 1px solid;
+}
+
+h4{
+    width: auto;
+    text-align: left;
+    letter-spacing: 5px;
+    color:#c2a2b6;
+    font-weight: normal;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom:#c2a2b6 2px dotted;
+}
+
+p{
+    text-align: left;
+    line-height: 30px;
+    font-size: 16px;
+    color:#4d484a;
+}
+
+
+
+#top_page p{
+    /* text-align: center; */
+    width: 800px;
+    margin: 0 auto 70px;
+}
+
+#design p,
+#photo p
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.top_title img{
+    width: 300px;
+    margin: 150px auto 50px;
+
+}
+
+
+
+
+
+#design,#photo,#web,#about,#title,#contact{
+    margin-top: 150px;
+}
+
+.img_grid{
+    display: flex;
+	flex-wrap:wrap;
+    justify-content: center;
+}
+
+.img_grid li {
+    width: calc(100%/3);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.img_grid li img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+#profile{
+    margin-bottom: 100px;
+}
+
+.guni{
+    width: 150px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.name{
+    color:#4d484a;
+    margin-bottom: 60px;
+}
+
+
+.name p{
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.furi{
+    text-align: center;
+}
+.summary{
+    margin-bottom: 40px;
+    
+    
+}
+
+
+.about_p{
+    text-align: left;
+    line-height: 26px;
+    font-size: 14px;
+    color:#4d484a;
+}
+
+
+.kozanpo_title{
+    margin-bottom: 50px;
+}
+
+.kozanpo_title img{
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.text_little{
+    margin-top: 40px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.kozanpo_link a,
+.mail_to a
+{
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    color: #fff;
+    background-color:#c2a2b6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr img{
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ここからスキル */
+
+#back_ground h3,
+#technical_skill h3,
+#qualification h3{
+    display: inline-block;
+    display: flex;
+    justify-content: start;
+    width: 300px;
+}
+
+
+
+
+
+
+
+.skill_grid{
+    vertical-align: top;
+    display: inline-block;
+    margin: 15px;
+    padding:20px;
+    border: 1px solid #4d484a;
+    width:250px;
+    height: 230px;
+}
+
+h5{
+    text-align: center;
+    letter-spacing: 3px;
+    color:#4d484a;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px;
+    border-bottom:#4d484a 1px dotted;
+}
+
+.adobe,.office,.programming{
+    margin-bottom: 70px;
+}
+
+.barometer{
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+
+
+.level{
+    padding-bottom: 50px;
+}
+
+.star{
+    display: flex;
+    align-items: flex-start
+}
+.star p{
+    text-align:left ;
+    letter-spacing: 2px;
+    display: inline-block;
+
+}
+
+.programming .skill_grid{
+    vertical-align: top;
+    display: inline-block;
+    margin: 15px;
+    padding:20px;
+    border: 1px solid #4d484a;
+    width:250px;
+    height: 100px;
+}
+
+.programming p{
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.gakureki p,.shikaku p {
+    padding-bottom: 20px;
+}
+
+
+#mail p{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: -50px;
+    background: #c2a2b6;
+    opacity:1;
+    border-radius: 50%;
+}
+
+#page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+
+#page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+footer {
+    display: block;
+    position: fixed;
+    position: sticky;
+    z-index: 999;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 20px 40px;
+    background: #c2a2b6;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100vh; 
+}
+
+
+footer p{
+    color:#fff;
+    display: inline-block;
+    text-align: center;
+} 
+
